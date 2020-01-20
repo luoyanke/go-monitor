@@ -23,8 +23,25 @@ server 端每隔一段时间读取系统的资源信息，后发给指定的接�
 
 ## 开发过程中遇到的问题
 ### 第三方包管理
-### 系统异常管理
+> go mod download
 
+依赖包会自动下载到$GOPATH/pkg/mod，多个项目可以共享缓存的mod
+
+> go mod vendor
+
+从mod中拷贝到项目的vendor目录下,为了让goland可以识别
+
+> 环境变量
+```bash
+# Enable the go modules feature
+export GO111MODULE=on
+# Set the GOPROXY environment variable
+export GOPROXY=https://goproxy.io,direct
+```
+
+
+### 系统异常管理
+nil
 
 
 ##后续会增加的功能
