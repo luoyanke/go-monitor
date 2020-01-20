@@ -1,0 +1,8 @@
+{
+  "nodeName": null,
+  "receive": [{
+    "ip": "172.16.121.87",
+    "port": 7424,
+    "url":"/api/node/accept"
+  }]
+}
